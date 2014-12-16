@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.oe.phonegap.plugin.autorecordvideo"
+        version="4.3.11">
+
+  <name>AutoRecordVideo</name>
+
+  <description>
+    This plugin allows you to share text, images (and other files), or a link via the native sharing widget of your device.
+    Android is fully supported, as well as iOS 6 and up. WP8 has somewhat limited support.
+  </description>
+
+  <author>MinhNT</author>
+
+  <license>MIT</license>
+
+  <keywords>video, auto record, auto record video</keywords>
+
+  <repo>https://github.com/minhntownego/phonegap-auto-record-video.git</repo>
+
+  <issue>https://github.com/minhntownego/phonegap-auto-record-video/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/AutoRecordVideo.js" name="AutoRecordVideo">
+    <clobbers target="window.plugins.autorecordvideo" />
+  </js-module>
+
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="AutoRecordVideo">
+        <param name="android-package" value="com.oe.plugin.plugins.AutoRecordVideo" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.CAMERA" />
+
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+      <uses-feature android:name="android.hardware.camera" />
+      <uses-feature android:name="android.hardware.camera.autofocus" />
+    </config-file>
+
+
+    <source-file src="src/android/com/oe/phonegap/plugins/AutoRecordVideo.java" target-dir="src/com/oe/phonegap/plugins"/>
+  </platform>
+</plugin>
