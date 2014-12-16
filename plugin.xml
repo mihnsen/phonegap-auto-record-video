@@ -35,7 +35,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="AutoRecordVideo">
-        <param name="android-package" value="com.oe.plugin.plugins.AutoRecordVideo" />
+        <param name="android-package" value="com.oe.phonegap.plugins.AutoRecordVideo" />
       </feature>
     </config-file>
 
