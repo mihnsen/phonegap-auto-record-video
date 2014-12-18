@@ -67,7 +67,7 @@ public class VideoCapture extends Activity implements SurfaceHolder.Callback {
 
 		camcorderProfile = CamcorderProfile.get(CamcorderProfile.QUALITY_LOW);
 
-		setContentView(R.layout.main);
+		setContentView(R.layout.auto_record_video_layout);
 
 		SurfaceView cameraView = (SurfaceView) findViewById(R.id.CameraView);
 		holder = cameraView.getHolder();

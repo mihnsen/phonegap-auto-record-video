@@ -48,7 +48,17 @@
       <uses-feature android:name="android.hardware.camera.autofocus" />
     </config-file>
 
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <activity android:name="com.oe.phonegap.plugins.VideoCapture" android:screenOrientation="portrait" />
+    </config-file>
 
+    <!-- Source file -->
     <source-file src="src/android/com/oe/phonegap/plugins/AutoRecordVideo.java" target-dir="src/com/oe/phonegap/plugins"/>
+    <source-file src="src/android/com/oe/phonegap/plugins/FileHelper.java" target-dir="src/com/oe/phonegap/plugins"/>
+    <source-file src="src/android/com/oe/phonegap/plugins/OELog.java" target-dir="src/com/oe/phonegap/plugins"/>
+    <source-file src="src/android/com/oe/phonegap/plugins/VideoCapture.java" target-dir="src/com/oe/phonegap/plugins"/>
+
+    <!-- XML layout -->
+    <source-file src="src/android/res/layout/auto_record_video_layout.xml" target-dir="res/layout"/>
   </platform>
 </plugin>
