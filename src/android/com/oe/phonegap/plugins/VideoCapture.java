@@ -75,7 +75,6 @@ public class VideoCapture extends Activity implements SurfaceHolder.Callback {
 		holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 
 		duration = getIntent().getIntExtra(INTENT_DURATION, duration);
-		duration = 3;
 		
 		currentTime = (TextView) findViewById(R.id.currenttime);
 		durationTime = (TextView) findViewById(R.id.duration);
