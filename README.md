@@ -1,1 +1,3 @@
-# PhoneGap Auto Record Video plugin for Android
+#This project is unmaintained
+
+## PhoneGap Auto Record Video plugin for Android
